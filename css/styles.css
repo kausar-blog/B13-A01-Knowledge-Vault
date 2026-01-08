@@ -124,5 +124,17 @@
   text-align: center;
 }
 
+/* Brain Section Styles */
 
+.brain-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 
+.brain-content {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
