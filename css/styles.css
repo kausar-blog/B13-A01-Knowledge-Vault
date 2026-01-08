@@ -72,6 +72,51 @@
   text-align: center;
 }
 
+.banner-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 25px;
+  color: #30b868;
+}
+
+.banner-content h1 {
+  font-size: 65px;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+.banner-content h1 span {
+  color: #30b868;
+}
+
+.banner-content p {
+  font-size: 19px;
+  max-width: 700px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.banner-btn {
+  margin-top: 20px;
+  display: flex;
+}
+
+.banner-btn a {
+  background-color: #30b868;
+  text-decoration: none;
+  padding: 14px 24px;
+  margin: 0 5px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
 /* Notes Section Styles */
 
 .notes-section {
