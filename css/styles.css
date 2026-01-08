@@ -5,116 +5,150 @@
   font-family: sans-serif;
 }
 
-.navbar {
-  background-color: #fff;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* paragraph */
+
+p {
+  font-size: 20px;
+}
+
+/* button  */
+
+.btn {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 10px;
+  padding: 14px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn__primary {
+  background-color: #30b868;
+  color: #fff;
+  border: 2px solid #30b868;
+}
+
+.btn__primary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn__secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn__secondary:hover {
+  background-color: #30b868;
+  border: 2px solid #30b868;
+}
+
+.btn__icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* navbar styles */
+
+.header {
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav__menu {
   list-style: none;
   display: flex;
   gap: 15px;
 }
 
-.nav-links li a {
+.navbar__link {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.navbar__link:hover {
   color: #30b868;
-  transition: color 0.3s;
 }
 
-/* .get-btn {
-  background-color: #30b868;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 5px;
-} */
-
-.get-btn a {
-  background-color: #30b868;
-  padding: 10px 16px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
+.btn__small:hover {
+  background-color: rgba(48, 184, 104, 0.8);
 }
 
-.get-btn a:hover {
-  background-color: #28a75a;
-  transition: background-color 0.3s;
-}
+/* Hero Banner Section Styles */
 
-/* Banner Section Styles */
-
-.banner {
+.hero {
   background-image: url(../assets/hero-bg.png);
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 70vh;
 }
 
-.banner-content {
+.hero__container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #fff;
-  text-align: center;
 }
 
-.banner-subtitle {
+.hero__content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero__subtitle {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   background-color: #fff;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 25px;
   color: #30b868;
+  width: fit-content;
 }
 
-.banner-content h1 {
-  font-size: 65px;
-  max-width: 700px;
-  margin-bottom: 20px;
+.hero__title {
+  font-size: 64px;
+  max-width: 720px;
+  margin: 0 auto 20px;
 }
-.banner-content h1 span {
+
+.hero__title-highlight {
   color: #30b868;
 }
 
-.banner-content p {
-  font-size: 19px;
-  max-width: 700px;
+.hero__description {
+  margin: 0 auto;
+  max-width: 720px;
+  line-height: 1.8;
   font-weight: 500;
-  line-height: 2;
 }
 
-.banner-btn {
-  margin-top: 20px;
+.hero__btn {
+  margin-top: 30px;
   display: flex;
-}
-
-.banner-btn a {
-  background-color: #30b868;
-  text-decoration: none;
-  padding: 14px 24px;
-  margin: 0 5px;
-  color: #fff;
-  font-weight: 600;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border-radius: 5px;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Notes Section Styles */

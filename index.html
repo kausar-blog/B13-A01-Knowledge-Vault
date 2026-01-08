@@ -10,53 +10,91 @@
   <body>
     <!-- Navbar Section start -->
 
-    <div class="navbar">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./assets/logo-navbar.png" alt="logo-navbar" />
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#why-it's-different">Why It's Different</a></li>
-      </ul>
-      <div class="get-btn">
-        <a href="#get-early-access">Get Early Access</a>
-      </div>
-    </div>
+    <header class="header">
+      <nav class="navbar container">
+        <!-- logo -->
+        <div class="navbar__logo">
+          <a href="./index.html" class="navbar__logo-link">
+            <img
+              src="./assets/logo-navbar.png"
+              alt="Logo"
+              class="navbar__logo-img"
+            />
+          </a>
+        </div>
+        <!-- navigation links -->
+        <ul class="nav__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#features">Features</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#why-it's-different" class="navbar__link">
+              Why It's Different
+            </a>
+          </li>
+        </ul>
+
+        <!-- navbar button -->
+        <div class="navbar__btn">
+          <a href="#get-early-access" class="btn btn__primary btn__small"
+            >Get Early Access
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <!-- Navbar Section end -->
 
     <!--  Banner Section start  -->
 
-    <div class="banner">
-      <div class="banner-content">
-        <div class="banner-subtitle">
-          <img src="./assets/group-circle.png" alt="group-circle" />
-          <span>Early Access Now Open</span>
-        </div>
-        <h1>Structured thinking, <span>Not just note-taking.</span></h1>
-        <p>
-          A private space to store notes, links, and learning summaries —
-          designed to help you think clearly, connect ideas, and turn learning
-          into long-term knowledge.
-        </p>
-        <div class="banner-btn">
-          <div class="">
-            <a href="#get-early-access"
-              >Start Building Your Vault
-              <img src="./assets/ArrowRight.png" alt="ArrowRight"
-            /></a>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <!-- Subtitle -->
+          <div class="hero__subtitle">
+            <img
+              src="./assets/group-circle.png"
+              alt="Early Access"
+              class="hero__subtitle-icon"
+            />
+            <span class="hero__subtitle-text">Early Access Now Open</span>
           </div>
-          <div class="">
-            <a href="#get-early-access"
-              ><img src="./assets/ArrowRight.png" alt="" /> See How It Works</a
+
+          <!-- Title -->
+          <h1 class="hero__title"
+            >Structured thinking,
+            <span class="hero__title-highlight">Not just note-taking.</span></h1
+          >
+
+          <!-- Description -->
+          <p class="hero__description">
+            A private space to store notes, links, and learning summaries —
+            designed to help you think clearly, connect ideas, and turn learning
+            into long-term knowledge.
+          </p>
+
+          <!-- button -->
+          <div class="hero__btn">
+            <a href="./index.html" class="btn btn__primary btn-icon"
+              >Start Building Your Vault
+              <img
+                src="./assets/ArrowRight.png"
+                alt="Arrow Right"
+                class="btn__icon"
+              />
+            </a>
+
+            <a href="./index.html" class="btn btn__secondary btn-icon">
+              <img src="./assets/ArrowRight.png" alt="" class="btn__icon" /> See
+              How It Works</a
             >
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--  Banner Section end  -->
 
