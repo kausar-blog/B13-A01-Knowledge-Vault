@@ -13,8 +13,10 @@
 
 /* paragraph */
 
-p {
-  font-size: 20px;
+.paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  color: #627382;
 }
 
 /* button  */
@@ -163,26 +165,20 @@ p {
 
 .notes__header {
   text-align: center;
-  max-width: 700px;
   margin: 0 auto 30px;
 }
 
 .notes__title {
-  font-size: 40px;
+  font-size: 48px;
+  color: #001931;
   margin-bottom: 16px;
 }
 
 .notes__subtitle {
+  color: #627382;
+  font-weight: 400;
   margin: 0 auto;
 }
-
-/* .notes-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-} */
 
 .notes__grid {
   display: grid;
@@ -190,7 +186,7 @@ p {
   gap: 20px;
 }
 
-.note__card {
+.notes__card {
   background-color: #fff;
   padding: 20px 10px;
   display: flex;
@@ -199,17 +195,18 @@ p {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 .notes__icon {
-  background-color: red;
+  background-color: rgb(249, 85, 85);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 40px 0 15px 0;
 }
 
 .notes__icon img {
@@ -217,7 +214,15 @@ p {
   height: 25px;
 }
 
+.notes__card-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #001931;
+}
+
 .notes__card-text {
+  color: #627382;
   text-align: center;
 }
 
@@ -229,7 +234,6 @@ p {
 
 .brain__container {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 50px;
 }
@@ -252,13 +256,16 @@ p {
 
 .brain__label {
   color: #30b868;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 15px;
 }
 
 .brain__title {
-  font-size: 45px;
+  color: #001931;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .brain__list {
@@ -270,6 +277,8 @@ p {
 }
 
 .brain__item {
+  color: #001931;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -287,7 +296,7 @@ p {
 }
 
 .early__content {
-  background-color: antiquewhite;
+  background-color: #f7f6f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,7 +306,9 @@ p {
 }
 
 .early__title {
-  font-size: 45px;
+  text-transform: capitalize;
+  color: #001931;
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
@@ -308,6 +319,7 @@ p {
 
 .early__btn {
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 
 .early__note {
