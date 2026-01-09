@@ -78,7 +78,7 @@
 
           <!-- button -->
           <div class="hero__btn">
-            <a href="./index.html" class="btn btn__primary btn-icon"
+            <a href="./index.html" class="btn btn__primary btn-gap"
               >Start Building Your Vault
               <img
                 src="./assets/ArrowRight.png"
@@ -87,8 +87,8 @@
               />
             </a>
 
-            <a href="./index.html" class="btn btn__secondary btn-icon">
-              <img src="./assets/ArrowRight.png" alt="" class="btn__icon" /> See
+            <a href="./index.html" class="btn btn__secondary btn-gap">
+              <img src="./assets/Play.png" alt="Play" class="btn__icon" /> See
               How It Works</a
             >
           </div>
@@ -100,44 +100,55 @@
 
     <!-- notes section start -->
 
-    <section class="notes-section">
-      <div class="notes-center">
-        <h2>Notes Don't Fail, Structure Does.</h2>
-        <p
-          >You're not bad at learning. Your tools just weren't built for how
-          knowledge actually works.</p
-        >
-      </div>
-      <div class="notes-card">
-        <div class="note-card-item">
-          <div class="card-img">
-            <img src="./assets/Vector.png" alt="Vector" />
-          </div>
-          <h3>Scattered Notes</h3>
-          <p> Your ideas live in 10 different apps, none of them connected. </p>
+    <section class="notes">
+      <div class="notes__container container">
+        <!-- section title -->
+        <div class="notes__header">
+          <h2 class="notes__title">Notes Don't Fail, Structure Does.</h2>
+          <p class="notes__subtitle"
+            >You're not bad at learning. Your tools just weren't built for how
+            knowledge actually works.</p
+          >
         </div>
-        <div class="note-card-item">
-          <div class="card-img">
-            <img src="./assets/Bookmarks.png" alt="Bookmark" />
+
+        <!-- Cards -->
+        <div class="notes__grid">
+          <div class="note__card">
+            <div class="notes__icon">
+              <img src="./assets/Vector.png" alt="Scattered Notes" />
+            </div>
+            <h3 class="notes__card-title">Scattered Notes</h3>
+            <p class="notes__card-text">
+              Your ideas live in 10 different apps, none of them connected.
+            </p>
           </div>
-          <h3>Bookmark overload</h3>
-          <p> Hundreds of saved links you'll never revisit or remember. </p>
-        </div>
-        <div class="note-card-item">
-          <div class="card-img">
-            <img src="./assets/Brain.png" alt="brain" />
+          <div class="note__card">
+            <div class="notes__icon">
+              <img src="./assets/Bookmarks.png" alt="Bookmark" />
+            </div>
+            <h3 class="notes__card-title">Bookmark overload</h3>
+            <p class="notes__card-text">
+              Hundreds of saved links you'll never revisit or remember.
+            </p>
           </div>
-          <h3>No idea connections</h3>
-          <p>
-            Insights stay isolated, never building into bigger understanding.
-          </p>
-        </div>
-        <div class="note-card-item">
-          <div class="card-img">
-            <img src="./assets/Info.png" alt="Info" />
+          <div class="note__card">
+            <div class="notes__icon">
+              <img src="./assets/Brain.png" alt="brain" />
+            </div>
+            <h3 class="notes__card-title">No idea connections</h3>
+            <p class="notes__card-text">
+              Insights stay isolated, never building into bigger understanding.
+            </p>
           </div>
-          <h3>Forgetting what you learned</h3>
-          <p>Knowledge fades because there's no system to retain it. </p>
+          <div class="note__card">
+            <div class="notes__icon">
+              <img src="./assets/Info.png" alt="Info" />
+            </div>
+            <h3 class="notes__card-title">Forgetting what you learned</h3>
+            <p class="notes__card-text"
+              >Knowledge fades because there's no system to retain it.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -145,73 +156,131 @@
     <!-- notes section end -->
 
     <!-- Brain section start -->
-    <section class="brain-section">
-      <div class="brain-img">
-        <img src="./assets/knowledge.png" alt="knowledge" />
-      </div>
-      <div class="brain-content">
-        <h5>The solution</h5>
-        <h2>Your second brain, structured by design.</h2>
-        <p
-          >Personal Knowledge Vault isn't another note-taking app. z It's a
-          thinking environment where every note, link, and summary becomes part
-          of an interconnected web of understanding.</p
-        >
-        <p class="brain-para">
-          <img src="./assets/CheckCircle.png" alt="CheckCircle" />
-          Capture ideas with structure built-in from day one
-        </p>
-        <p class="brain-para">
-          <img src="./assets/CheckCircle.png" alt="CheckCircle" />
-          Connect related concepts automatically as you write
-        </p>
-        <p class="brain-para">
-          <img src="./assets/CheckCircle.png" alt="CheckCircle" />
-          Build lasting knowledge through reflection prompts
-        </p>
-        <p class="brain-para">
-          <img src="./assets/CheckCircle.png" alt="CheckCircle" />
-          Find anything instantly with semantic search
-        </p>
+
+    <section class="brain">
+      <div class="brain__container container">
+        <!-- image -->
+        <div class="brain__image">
+          <img
+            src="./assets/knowledge.png"
+            alt="knowledge"
+            class="brain__img"
+          />
+        </div>
+
+        <!-- content -->
+
+        <div class="brain__content">
+          <span class="brain__label">The solution</span>
+          <h2 class="brain__title">Your second brain, structured by design.</h2>
+          <p class="brain__description"
+            >Personal Knowledge Vault isn't another note-taking app. z It's a
+            thinking environment where every note, link, and summary becomes
+            part of an interconnected web of understanding.
+          </p>
+
+          <!-- Feature list -->
+          <ul class="brain__list">
+            <li class="brain__item">
+              <img
+                src="./assets/CheckCircle.png"
+                alt="CheckCircle"
+                class="brain__icon"
+              />
+              Capture ideas with structure built-in from day one
+            </li>
+            <li class="brain__item">
+              <img
+                src="./assets/CheckCircle.png"
+                alt="CheckCircle"
+                class="brain__icon"
+              />
+              Connect related concepts automatically as you write
+            </li>
+            <li class="brain__item">
+              <img
+                src="./assets/CheckCircle.png"
+                alt="CheckCircle"
+                class="brain__icon"
+              />
+              Build lasting knowledge through reflection prompts
+            </li>
+            <li class="brain__item">
+              <img
+                src="./assets/CheckCircle.png"
+                alt="CheckCircle"
+                class="brain__icon"
+              />
+              Find anything instantly with semantic search
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- Brain section end -->
 
     <!-- Early Access Section start -->
-    <section class="early-access">
-      <div class="early-access-content">
-        <h2>Ready to think more clearly?</h2>
-        <p
-          >Join thousands of learners who are building their personal knowledge
-          vaults. Start free, no credit card required.
-        </p>
-        <div class="early-access-btn">
-          <a href="./index.html"
+    <section class="early">
+      <div class="early__container container">
+        <div class="early__content">
+          <h2 class="early__title">Ready to think more clearly?</h2>
+          <p class="early__description"
+            >Join thousands of learners who are building their personal
+            knowledge vaults. Start free, no credit card required.
+          </p>
+          <a
+            href="./index.html"
+            class="btn btn__primary btn-gap early__btn btn__small"
             >Get Early Access
-            <img src="./assets/ArrowRight.png" alt="ArrowRight"
+            <img
+              src="./assets/ArrowRight.png"
+              alt="ArrowRight"
+              class="btn__icon"
           /></a>
+
+          <p class="early__note"
+            >Free during early access • No credit card needed</p
+          >
         </div>
-        <p>Free during early access • No credit card needed</p>
       </div>
     </section>
     <!-- Early Access Section end -->
 
     <!-- footer section start -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./assets/logo-footer.png" alt="logo-footer" /> </div
-        ><div class="footer-social">
-          <p>Social Links</p>
-          <div class="social-icon">
-            <img src="./assets/Brain.png" alt="" />
-            <img src="./assets/Brain.png" alt="" />
-            <img src="./assets/Brain.png" alt="" />
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__content">
+          <!-- logo -->
+          <div class="footer__brand">
+            <img
+              src="./assets/logo-footer.png"
+              alt="logo-footer"
+              class="footer__logo"
+            />
+          </div>
+          <!-- footer social -->
+          <div class="footer__social">
+            <p class="footer__social-title">Social Links</p>
+            <div class="footer__icons">
+              <a href="#" class="footer__icon">
+                <img src="./assets/twitter.png" alt="twitter icon" />
+              </a>
+              <a href="#" class="footer__icon">
+                <img src="./assets/linkedin.png" alt="linkedin icon" />
+              </a>
+              <a href="#" class="footer__icon">
+                <img src="./assets/facebook.png" alt="facebook icon" />
+              </a>
+            </div>
           </div>
         </div>
+
+        <hr class="footer__horizontal" />
+
+        <p class="footer__copyright"
+          >&copy; 2026 Personal Knowledge Vault. All rights reserved.</p
+        >
       </div>
-      <hr />
-      <p>&copy; 2026 Personal Knowledge Vault. All rights reserved.</p>
     </footer>
 
     <!-- footer section end -->
