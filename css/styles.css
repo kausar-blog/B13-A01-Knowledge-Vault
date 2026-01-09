@@ -196,6 +196,13 @@
   border-radius: 10px;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notes__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .notes__icon {
